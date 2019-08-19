@@ -36,11 +36,12 @@ function makePerson() {
     var person = new Person(nameArray[x], lastArray[y], ageArray[z]);
     // create a new div element 
     var newDiv = document.createElement("div");
-    var newBody = document.createElement("div");
+    var newCard = document.createElement("div");
+    newDiv.setAttribute("class", " card text-center d-inline-block m-3 p-3 shadow");
     var newContent = document.createTextNode(person.fullInfo());
     // add the text node to the newly created div
     newDiv.appendChild(newContent);
     // add the newly created element and its content into the DOM 
     var currentDiv = document.getElementById("div1");
-    document.body.insertBefore(newDiv, currentDiv);
+    currentDiv.appendChild(newDiv);
 }
