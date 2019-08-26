@@ -52,9 +52,9 @@
     function makePerson(){
       var button = <HTMLButtonElement>document.getElementById("Button");
       var load = document.createElement("span");
-      load.setAttribute("class", "spinner-grow position");
+      load.setAttribute("class", "spinner-grow position-top");
       load.setAttribute("id", "spin");
-
+      
       button.appendChild(load);
       button.disabled=true;
       setTimeout(function(){button.disabled=false}, 3000);

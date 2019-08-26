@@ -32,7 +32,7 @@ function weeklyWage(hourlyWage, hours) {
 function makePerson() {
     var button = document.getElementById("Button");
     var load = document.createElement("span");
-    load.setAttribute("class", "spinner-grow position");
+    load.setAttribute("class", "spinner-grow position-top");
     load.setAttribute("id", "spin");
     button.appendChild(load);
     button.disabled = true;
